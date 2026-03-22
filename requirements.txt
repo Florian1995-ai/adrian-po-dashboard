@@ -1,0 +1,6 @@
+streamlit==1.55.0
+pandas
+supabase
+python-dotenv
+pdfplumber
+httpx

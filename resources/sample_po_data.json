@@ -1,0 +1,419 @@
+{
+  "properties": [
+    {
+      "id": "PROP001",
+      "name": "Summit Ridge Apartments",
+      "address": "2450 Ridgeway Dr, Asheville, NC 28801",
+      "units": 248,
+      "total_budget": 285000,
+      "status": "active_rehab"
+    }
+  ],
+  "vendors": [
+    {
+      "id": "V001",
+      "name": "Apex Builders LLC",
+      "contact": "Tony Reeves",
+      "email": "tony@apexbuilders.net",
+      "phone": "828-555-0142",
+      "specialty": "General Contractor — Exterior, Landscaping, Pressure Washing"
+    },
+    {
+      "id": "V002",
+      "name": "ProFix Plumbing & Handyman",
+      "contact": "Marco Delgado",
+      "email": "marco@profixplumbing.com",
+      "phone": "828-555-0387",
+      "specialty": "Plumbing, Sewer, General Maintenance"
+    },
+    {
+      "id": "V003",
+      "name": "TechSource Direct",
+      "contact": "Jeremy Collins",
+      "email": "jeremy.collins@techsource.com",
+      "phone": "800-555-4239",
+      "specialty": "IT Equipment & Technology"
+    },
+    {
+      "id": "V004",
+      "name": "Keystone Staffing Group",
+      "contact": "Kristal Warren",
+      "email": "kristal@keystonestaffing.com",
+      "phone": "828-555-0893",
+      "specialty": "National Leasing Specialist Deployment"
+    },
+    {
+      "id": "V005",
+      "name": "SafeGuard Supply Co.",
+      "contact": "Sales Team",
+      "email": "info@safeguardsupply.com",
+      "phone": "310-555-6500",
+      "specialty": "Fire Safety Equipment & Smoke Alarms"
+    },
+    {
+      "id": "V006",
+      "name": "SignWorks Design",
+      "contact": "David Marsh",
+      "email": "david@signworksdesign.com",
+      "phone": "828-555-1220",
+      "specialty": "Property Signage, Banners, Monument Signs"
+    },
+    {
+      "id": "V007",
+      "name": "SecureLock Systems Inc.",
+      "contact": "AR Department",
+      "email": "ar@securelocksystems.com",
+      "phone": "800-555-2263",
+      "specialty": "Door Lock Systems & Access Control"
+    }
+  ],
+  "budget_categories": [
+    {"code": "PW", "name": "Pressure Washing", "property_id": "PROP001", "budgeted": 55000},
+    {"code": "GD", "name": "Gutters & Downspouts", "property_id": "PROP001", "budgeted": 6000},
+    {"code": "LS", "name": "Landscaping & Rock", "property_id": "PROP001", "budgeted": 60000},
+    {"code": "DR", "name": "Drainage", "property_id": "PROP001", "budgeted": 8000},
+    {"code": "PL", "name": "Plumbing", "property_id": "PROP001", "budgeted": 35000},
+    {"code": "IT", "name": "IT Equipment", "property_id": "PROP001", "budgeted": 16000},
+    {"code": "LG", "name": "Leasing Services", "property_id": "PROP001", "budgeted": 30000},
+    {"code": "SF", "name": "Safety & Fire", "property_id": "PROP001", "budgeted": 15000},
+    {"code": "SG", "name": "Signage", "property_id": "PROP001", "budgeted": 3000},
+    {"code": "SC", "name": "Security Hardware", "property_id": "PROP001", "budgeted": 25000}
+  ],
+  "purchase_orders": [
+    {
+      "po_number": "SRA001",
+      "property_id": "PROP001",
+      "vendor_id": "V001",
+      "description": "Pressure washing & gutter cleaning — all buildings",
+      "category": "PW",
+      "amount": 16000,
+      "date_created": "2025-05-20",
+      "date_due": "2025-07-15",
+      "status": "in_progress",
+      "invoice_number": null,
+      "invoice_amount": null,
+      "date_paid": null,
+      "notes": "Covers pressure wash + gutter cleanup. Progress billing by completion %."
+    },
+    {
+      "po_number": "SRA002",
+      "property_id": "PROP001",
+      "vendor_id": "V001",
+      "description": "Landscaping — egg rock, weed barrier, edging (Bldgs 1-4)",
+      "category": "LS",
+      "amount": 30000,
+      "date_created": "2025-05-22",
+      "date_due": "2025-07-30",
+      "status": "in_progress",
+      "invoice_number": null,
+      "invoice_amount": null,
+      "date_paid": null,
+      "notes": "110 tons egg rock across 4 buildings. Progress billing."
+    },
+    {
+      "po_number": "SRA003",
+      "property_id": "PROP001",
+      "vendor_id": "V002",
+      "description": "Sewer & jetting — full property (40 cleanouts + 164 gutters)",
+      "category": "PL",
+      "amount": 26000,
+      "date_created": "2025-05-25",
+      "date_due": "2025-07-15",
+      "status": "pending",
+      "invoice_number": null,
+      "invoice_amount": null,
+      "date_paid": null,
+      "notes": "Sewer jetting, valve replacements, pool plumbing. Awaiting vendor schedule."
+    },
+    {
+      "po_number": "SRA024",
+      "property_id": "PROP001",
+      "vendor_id": "V001",
+      "description": "Building rock edges — 180 tons 2-5\" rock for building foundations",
+      "category": "LS",
+      "amount": 46000,
+      "date_created": "2025-06-01",
+      "date_due": "2025-08-15",
+      "status": "in_progress",
+      "invoice_number": null,
+      "invoice_amount": null,
+      "date_paid": null,
+      "notes": "Additional landscaping scope. Progress billing by tonnage delivered."
+    }
+  ],
+  "invoices_unmatched": [
+    {
+      "invoice_number": "ABL-2025-0104",
+      "vendor": "Apex Builders LLC",
+      "vendor_id": "V001",
+      "date": "2025-06-05",
+      "amount": 11950.00,
+      "description": "Pressure wash buildings — 20% completion draw",
+      "line_items": [
+        {"description": "Pressure wash 4 buildings (four stories) — stone, hardy plank, regular siding, soffit, fascia, porch, ceilings (20%)", "amount": 11000.00},
+        {"description": "Boom lift rental (1 month) — 25% of rental period", "amount": 950.00}
+      ],
+      "po_reference": null,
+      "category_guess": "PW",
+      "status": "unmatched"
+    },
+    {
+      "invoice_number": "ABL-2025-0105",
+      "vendor": "Apex Builders LLC",
+      "vendor_id": "V001",
+      "date": "2025-06-05",
+      "amount": 11090.00,
+      "description": "Landscaping egg rock & slope repair — 35%/20% draw",
+      "line_items": [
+        {"description": "Prep edging, 50 tons egg rock (Bldgs 1-2), 60 tons egg rock + weed barrier (Bldgs 3-4) — 35%", "amount": 8980.00},
+        {"description": "Slope repair bldg 3 — 20 tons rip rap + 120ft drain pipe — 20%", "amount": 2110.00}
+      ],
+      "po_reference": null,
+      "category_guess": "LS",
+      "status": "unmatched"
+    },
+    {
+      "invoice_number": "ABL-2025-0107",
+      "vendor": "Apex Builders LLC",
+      "vendor_id": "V001",
+      "date": "2025-06-12",
+      "amount": 11660.00,
+      "description": "Pressure wash buildings — 22% completion draw",
+      "line_items": [
+        {"description": "Pressure wash 4 buildings — chemicals for stone/hardy plank/siding (22%)", "amount": 11000.00},
+        {"description": "Boom lift rental — additional month charge", "amount": 660.00}
+      ],
+      "po_reference": null,
+      "category_guess": "PW",
+      "status": "unmatched"
+    },
+    {
+      "invoice_number": "ABL-2025-0108",
+      "vendor": "Apex Builders LLC",
+      "vendor_id": "V001",
+      "date": "2025-06-12",
+      "amount": 11400.00,
+      "description": "Landscaping egg rock (30%) + slope drainage repair (40%)",
+      "line_items": [
+        {"description": "Egg rock Bldgs 1-2 refresh + Bldgs 3-4 new install — 30% draw", "amount": 8980.00},
+        {"description": "Slope repair + drain pipe connect to downspouts — 40% draw", "amount": 2420.00}
+      ],
+      "po_reference": null,
+      "category_guess": "LS",
+      "status": "unmatched"
+    },
+    {
+      "invoice_number": "ABL-2025-0109",
+      "vendor": "Apex Builders LLC",
+      "vendor_id": "V001",
+      "date": "2025-06-19",
+      "amount": 4750.00,
+      "description": "Gutter cleaning — all buildings (90% completion)",
+      "line_items": [
+        {"description": "Clean all gutters & downspouts, remove debris, tie down gutters, repair 6 gutter areas — 90% of contract", "amount": 4750.00}
+      ],
+      "po_reference": "SRA001",
+      "category_guess": "GD",
+      "status": "matched"
+    },
+    {
+      "invoice_number": "ABL-2025-0111",
+      "vendor": "Apex Builders LLC",
+      "vendor_id": "V001",
+      "date": "2025-06-19",
+      "amount": 23265.00,
+      "description": "Building rock edges — 180 tons extra rock (50% draw)",
+      "line_items": [
+        {"description": "Add 180 tons of 2-5\" rock for building foundation edges — 50% completion draw", "amount": 23265.00}
+      ],
+      "po_reference": "SRA024",
+      "category_guess": "LS",
+      "status": "matched"
+    },
+    {
+      "invoice_number": "ABL-2025-0112",
+      "vendor": "Apex Builders LLC",
+      "vendor_id": "V001",
+      "date": "2025-06-19",
+      "amount": 11000.00,
+      "description": "Pressure wash — 4 buildings complete + sidewalks, pool, curbs",
+      "line_items": [
+        {"description": "Pressure wash 4 entire buildings (four stories high) — all exterior surfaces including porch/ceilings", "amount": 10200.00},
+        {"description": "Pressure wash sidewalks, pool deck, curbs, amenity areas, retaining walls", "amount": 800.00}
+      ],
+      "po_reference": "SRA001",
+      "category_guess": "PW",
+      "status": "matched"
+    },
+    {
+      "invoice_number": "PFX-2025-0516",
+      "vendor": "ProFix Plumbing & Handyman",
+      "vendor_id": "V002",
+      "date": "2025-06-11",
+      "amount": 28140.00,
+      "description": "Full property sewer & plumbing — 40 cleanouts, 164 gutters, pool equipment",
+      "line_items": [
+        {"description": "Sewer jetting 40 cleanups — camera inspection, root cutting, hydro-jetting", "amount": 16800.00},
+        {"description": "164 gutters — check/clean traps, replace broken valves, test flow", "amount": 6540.00},
+        {"description": "Pool equipment — replace pump seal, backwash valve, chemical feeder repair", "amount": 2400.00},
+        {"description": "Emergency callout — main sewer backup Bldg 2 (after-hours)", "amount": 2400.00}
+      ],
+      "po_reference": null,
+      "category_guess": "PL",
+      "status": "unmatched"
+    },
+    {
+      "invoice_number": "PFX-2025-0520",
+      "vendor": "ProFix Plumbing & Handyman",
+      "vendor_id": "V002",
+      "date": "2025-06-12",
+      "amount": 850.00,
+      "description": "Office restroom plumbing repairs",
+      "line_items": [
+        {"description": "Women's restroom: repair 2 toilets, replace flange, replace broken flapper", "amount": 420.00},
+        {"description": "Men's restroom: replace urinal flush valve, replace closet master", "amount": 230.00},
+        {"description": "Office: inspect/repair water fountain, fix dripping bottle filler", "amount": 200.00}
+      ],
+      "po_reference": null,
+      "category_guess": "PL",
+      "status": "unmatched"
+    },
+    {
+      "invoice_number": "PFX-2025-0521",
+      "vendor": "ProFix Plumbing & Handyman",
+      "vendor_id": "V002",
+      "date": "2025-06-12",
+      "amount": 3800.00,
+      "description": "Pool area plumbing — backflow replacement + restroom repairs",
+      "line_items": [
+        {"description": "Replace old 1\" backflow valve (bad condition), install new 1\" backflow", "amount": 1800.00},
+        {"description": "Men's pool restroom: replace urinal flush valve, fill valve, fix toilet leak/rocking", "amount": 950.00},
+        {"description": "Women's pool restroom: fix loose toilet, caulk", "amount": 350.00},
+        {"description": "Pool kitchen: replace broken faucet", "amount": 700.00}
+      ],
+      "po_reference": null,
+      "category_guess": "PL",
+      "status": "unmatched"
+    },
+    {
+      "invoice_number": "TSD-2025-4287",
+      "vendor": "TechSource Direct",
+      "vendor_id": "V003",
+      "date": "2025-06-18",
+      "amount": 12620.00,
+      "description": "Leasing office IT setup — laptops, monitors, docks, peripherals",
+      "line_items": [
+        {"description": "Dell Latitude 5450 laptops (4x) — AI Ready, 14\", Intel Core Ultra 5", "amount": 6020.00},
+        {"description": "Dell 24\" monitors P2425H (4x)", "amount": 870.00},
+        {"description": "Dell WD19S docking stations USB-C (4x)", "amount": 980.00},
+        {"description": "Logitech MK370 wireless keyboard/mouse combos (6x)", "amount": 250.00},
+        {"description": "Surge protectors, patch cables, locking kit", "amount": 190.00},
+        {"description": "Lenovo ThinkCentre M90a all-in-one (2x) — front desk workstations", "amount": 3180.00},
+        {"description": "Network cables CAT6 3ft (6x) + 12ft patch cables (6x)", "amount": 60.00},
+        {"description": "Kensington desktop locking kit (1x)", "amount": 50.00},
+        {"description": "Sales tax", "amount": 1020.00}
+      ],
+      "po_reference": null,
+      "category_guess": "IT",
+      "status": "unmatched"
+    },
+    {
+      "invoice_number": "TSD-2025-4291",
+      "vendor": "TechSource Direct",
+      "vendor_id": "V003",
+      "date": "2025-06-18",
+      "amount": 1880.00,
+      "description": "iPad Minis for property maintenance & leasing tours",
+      "line_items": [
+        {"description": "Apple iPad Mini Wi-Fi 128GB 8.3\" (3x)", "amount": 1620.00},
+        {"description": "Rugged cases for iPad Mini 6th gen (3x)", "amount": 95.00},
+        {"description": "Sales tax", "amount": 165.00}
+      ],
+      "po_reference": null,
+      "category_guess": "IT",
+      "status": "unmatched"
+    },
+    {
+      "invoice_number": "KSG-2025-1945",
+      "vendor": "Keystone Staffing Group",
+      "vendor_id": "V004",
+      "date": "2025-06-17",
+      "amount": 15375.00,
+      "description": "National Leasing Specialist deployment x2 (50% deposit)",
+      "line_items": [
+        {"description": "NLS #1 deployment — leasing specialist 6/23-7/11 (50% upfront)", "amount": 4700.00},
+        {"description": "NLS #1 — additional specialist fee", "amount": 455.00},
+        {"description": "NLS #1 — 50% estimated travel expenses", "amount": 2530.00},
+        {"description": "NLS #2 deployment — leasing specialist 6/30-7/18 (50% upfront)", "amount": 4700.00},
+        {"description": "NLS #2 — additional specialist fee", "amount": 455.00},
+        {"description": "NLS #2 — 50% estimated travel expenses", "amount": 2535.00}
+      ],
+      "po_reference": null,
+      "category_guess": "LG",
+      "status": "unmatched"
+    },
+    {
+      "invoice_number": "SGS-2025-9446",
+      "vendor": "SafeGuard Supply Co.",
+      "vendor_id": "V005",
+      "date": "2025-06-13",
+      "amount": 12560.00,
+      "description": "930x hardwired smoke alarms with battery backup",
+      "line_items": [
+        {"description": "BRK First Alert SMI100-AC 120V AC/DC ionization smoke alarm (930 units @ $13.51)", "amount": 12560.00}
+      ],
+      "po_reference": null,
+      "category_guess": "SF",
+      "status": "unmatched"
+    },
+    {
+      "invoice_number": "SWD-2025-0831",
+      "vendor": "SignWorks Design",
+      "vendor_id": "V006",
+      "date": "2025-06-09",
+      "amount": 1325.00,
+      "description": "Temporary property banners + monument sign cover",
+      "line_items": [
+        {"description": "36\"x96\" mesh banners (2x) — property branding", "amount": 450.00},
+        {"description": "Monument sign vinyl cover — temporary branding during renovation", "amount": 500.00},
+        {"description": "Remove old banners + installation labor", "amount": 375.00}
+      ],
+      "po_reference": null,
+      "category_guess": "SG",
+      "status": "unmatched"
+    },
+    {
+      "invoice_number": "SLS-2025-DEP",
+      "vendor": "SecureLock Systems Inc.",
+      "vendor_id": "V007",
+      "date": "2025-06-17",
+      "amount": 23450.00,
+      "description": "Door lock system deposit — all unit & common area locks",
+      "line_items": [
+        {"description": "50% deposit — electronic lock system for 248 units + common areas", "amount": 23450.00}
+      ],
+      "po_reference": null,
+      "category_guess": "SC",
+      "status": "unmatched"
+    }
+  ],
+  "activity_log": [
+    {"timestamp": "2025-06-05T08:30:00", "type": "invoice_received", "po_number": null, "message": "Invoice ABL-2025-0104 received from Apex Builders ($11,950) — NO PO REFERENCE"},
+    {"timestamp": "2025-06-05T08:32:00", "type": "invoice_received", "po_number": null, "message": "Invoice ABL-2025-0105 received from Apex Builders ($11,090) — NO PO REFERENCE"},
+    {"timestamp": "2025-06-09T10:00:00", "type": "invoice_received", "po_number": null, "message": "Invoice SWD-2025-0831 received from SignWorks Design ($1,325) — NO PO REFERENCE"},
+    {"timestamp": "2025-06-11T14:15:00", "type": "invoice_received", "po_number": null, "message": "Invoice PFX-2025-0516 received from ProFix Plumbing ($28,140) — NO PO REFERENCE"},
+    {"timestamp": "2025-06-12T09:00:00", "type": "invoice_received", "po_number": null, "message": "Invoice ABL-2025-0107 received from Apex Builders ($11,660) — NO PO REFERENCE"},
+    {"timestamp": "2025-06-12T09:05:00", "type": "invoice_received", "po_number": null, "message": "Invoice ABL-2025-0108 received from Apex Builders ($11,400) — NO PO REFERENCE"},
+    {"timestamp": "2025-06-12T11:20:00", "type": "invoice_received", "po_number": null, "message": "Invoice PFX-2025-0520 received from ProFix Plumbing ($850) — NO PO REFERENCE"},
+    {"timestamp": "2025-06-12T11:22:00", "type": "invoice_received", "po_number": null, "message": "Invoice PFX-2025-0521 received from ProFix Plumbing ($3,800) — NO PO REFERENCE"},
+    {"timestamp": "2025-06-13T15:00:00", "type": "invoice_received", "po_number": null, "message": "Invoice SGS-2025-9446 received from SafeGuard Supply ($12,560) — NO PO REFERENCE"},
+    {"timestamp": "2025-06-17T10:30:00", "type": "invoice_received", "po_number": null, "message": "Invoice KSG-2025-1945 received from Keystone Staffing ($15,375) — NO PO REFERENCE"},
+    {"timestamp": "2025-06-17T14:00:00", "type": "invoice_received", "po_number": null, "message": "Invoice SLS-2025-DEP received from SecureLock Systems ($23,450) — NO PO REFERENCE"},
+    {"timestamp": "2025-06-18T08:45:00", "type": "invoice_received", "po_number": null, "message": "Invoice TSD-2025-4287 received from TechSource Direct ($12,620) — NO PO REFERENCE"},
+    {"timestamp": "2025-06-18T08:47:00", "type": "invoice_received", "po_number": null, "message": "Invoice TSD-2025-4291 received from TechSource Direct ($1,880) — NO PO REFERENCE"},
+    {"timestamp": "2025-06-19T09:00:00", "type": "invoice_received", "po_number": "SRA001", "message": "Invoice ABL-2025-0109 received from Apex Builders ($4,750) — matches PO SRA001"},
+    {"timestamp": "2025-06-19T09:02:00", "type": "invoice_received", "po_number": "SRA024", "message": "Invoice ABL-2025-0111 received from Apex Builders ($23,265) — matches PO SRA024"},
+    {"timestamp": "2025-06-19T09:05:00", "type": "invoice_received", "po_number": "SRA001", "message": "Invoice ABL-2025-0112 received from Apex Builders ($11,000) — matches PO SRA001"}
+  ],
+  "sample_invoice_text": "INVOICE\n\nApex Builders LLC\n312 Mountain View Rd\nBlack Mountain, NC 28711\ntony@apexbuilders.net\n828-555-0142\n\nBill to:\nSummit Ridge Apartments\n2450 Ridgeway Dr\nAsheville, NC 28801\n\nInvoice no.: ABL-2025-0112\nTerms: Due on receipt\nInvoice date: 06/19/2025\nDue date: 06/19/2025\nPO #: SRA001\n\nDescription                                              Qty    Rate        Amount\n\n1. PRESSURE WASH                                                           $10,200.00\n   Pressure wash 4 entire buildings (four stories high)\n   Install chemicals for all stone, hardy plank, regular\n   siding, soffit and fascia including porch and ceilings\n   Special use of chemicals for pressure wash on metal wall\n\n2. EXTERIOR GROUNDS                                                           $800.00\n   Pressure wash sidewalks, pool deck, curbs,\n   amenity areas and retaining walls\n\n                                                          Total:  $11,000.00\n\nNote: Please review your invoice. Thank you for your business!"
+}
